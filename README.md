@@ -29,6 +29,16 @@ briha/
 │   └── search_utils.py    # Basic search logic
 ├── README.md
 
+## Usage
+
+```bash
+git clone https://github.com/roops-spec/briha.git
+cd briha
+pip install -r requirements.txt
+python core.py
+```
+Then say, “What’s the time?”, “Search AI”, or “Exit”.
+
 ### Coming in Phase 2:
 - Custom wake word
 - GUI with voice command log
