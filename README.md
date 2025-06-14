@@ -1,23 +1,23 @@
 # B.R.I.H.A. – Behavioral Response & Intelligent Human Assistant
 Your own J.A.R.V.I.S.-like voice AI assistant designed to listen, understand, and act – phase by phase.
 
-PROJECT VISION :
+### Project vision :
 B.R.I.H.A. is an evolving AI assistant built with Python. Inspired by Tony Stark's J.A.R.V.I.S., it’s designed to become a multi-functional, voice-controlled personal assistant. This is Phase 1: activating voice input, speech output, and basic response behavior.
 
-FEATURES-PHASE 1 :
+### Features-phase 1 :
 ✅ Voice input via microphone  
 ✅ Voice output using TTS  
 ✅ Core module-based design (listener, speaker, responder)  
 ✅ Modular code for future expansion  
 ✅ Search + Timer support (core utilities)
 
-TECH STACK :
+### Tech stack :
 - Python 3.x
 - SpeechRecognition
 - pyttsx3
 - Modular file structure with utils, core logic, and I/O separation
 
-FOLDER STRUCTURE :
+### Folder structure :
 briha/
 │
 ├── core.py                 # Main control loop
@@ -29,7 +29,6 @@ briha/
 │   └── search_utils.py    # Basic search logic
 ├── README.md
 
-PREVIEW OF WHAT'S COMING :
 ### Coming in Phase 2:
 - Custom wake word
 - GUI with voice command log
