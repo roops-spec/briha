@@ -12,10 +12,13 @@ B.R.I.H.A. is an evolving AI assistant built with Python. Inspired by Tony Stark
 ✅ Search + Timer support (core utilities)
 
 ### Tech stack :
-- Python 3.x
-- SpeechRecognition
-- pyttsx3
-- Modular file structure with utils, core logic, and I/O separation
+- **Language**: Python 3.x  
+- **Voice Input**: SpeechRecognition, pyaudio  
+- **Transcription**: OpenAI Whisper (tiny/base models) — offline, chunked processing  
+- **Command Parsing**: Rule-based logic (custom)  
+- **Execution Layer**: Python modules (reminders, timers, web scraping)  
+- **Voice Output**: pyttsx3 / gTTS  
+- **Scheduler**: APScheduler / datetime
 
 ### Folder structure :
 briha/
@@ -44,16 +47,6 @@ Then say, “What’s the time?”, “Search AI”, or “Exit”.
 - GUI with voice command log
 - Weather, alarms, and file access
 - Contextual memory and smart reply logic
-
-## Tech Stack — Phase 1
-
-- **Language**: Python 3.x  
-- **Voice Input**: SpeechRecognition, pyaudio  
-- **Transcription**: OpenAI Whisper (tiny/base models) — offline, chunked processing  
-- **Command Parsing**: Rule-based logic (custom)  
-- **Execution Layer**: Python modules (reminders, timers, web scraping)  
-- **Voice Output**: pyttsx3 / gTTS  
-- **Scheduler**: APScheduler / datetime
 
 ### Design Note:
 Phase 1 is lean by design: low-complexity, offline-first, and modular. Prioritizes reliability and core user loop over streaming or ML-heavy features. Phase 2 will explore real-time duplex audio, async NLP, and LLM integration.
